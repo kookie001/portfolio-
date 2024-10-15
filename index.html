@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Singh - Cloud DevOps Engineer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 20px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #667eea;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #667eea;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about-text {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lucky Singh</h1>
+            <p>Cloud DevOps Engineer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm Lucky, a Cloud DevOps Engineer with expertise in architecting scalable cloud infrastructure, automating deployments, and managing cloud environments. I specialize in cloud technologies like AWS, GCP, Azure, Terraform, Docker, and CI/CD automation. I have experience building AI/ML models and implementing robust DevOps practices to streamline development processes.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.postimg.cc/05pvPDKP/IMG-20231202-100909.jpg" alt="Lucky Singh">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-aws"></i>
+                    <h3>AWS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker"></i>
+                    <h3>Docker</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-jenkins"></i>
+                    <h3>Jenkins</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Kubernetes</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-google"></i>
+                    <h3>GCP</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-microsoft"></i>
+                    <h3>Azure</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cubes"></i>
+                    <h3>Terraform</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-linux"></i>
+                    <h3>Linux</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://i.postimg.cc/tCC3pdvx/Screenshot-2024-10-15-224948.png');"></div>
+                    <div class="project-info">
+                        <h3>DeepTrack - Deepfake Detection</h3>
+                        <p>Developed a web application to detect deepfakes using AI/ML algorithms for media analysis.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://i.postimg.cc/DyC7kCCm/Screenshot-2024-10-15-233550.png');"></div>
+                    <div class="project-info">
+                        <h3>VPN Deployment with AWS Autoscaling</h3>
+                        <p>Implemented a VPN solution using OpenVPN, AWS Image Builder, and Terraform for autoscaling across regions.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://i.postimg.cc/kXBm0zCR/project-2-cover-phot.jpg');"></div>
+                    <div class="project-info">
+                        <h3>Cloud-Based Portfolio Website</h3>
+                        <p>Building a personal portfolio website using AWS (EC2, S3, Route 53), Docker, and CI/CD practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Email: <a href="mailto:luckycloud50@gmail.com" style="color: #fff;">luckycloud50@gmail.com</a></p>
+                <p>Phone: <a href="tel:+918954755619" style="color: #fff;">+91 8954755619</a></p>
+                <p>Location: Ghaziabad, India</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/lucky-singh-87329b255/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/kookie001" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+        <p>© 2024 Lucky Singh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
